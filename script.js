@@ -50,9 +50,12 @@ setImage(currentIndex, slider, images)
 //elements from HTML
 const menu = document.querySelector("#menu")
 const ul = document.querySelector("nav").querySelector("ul")
+const bars = document.querySelectorAll('.menu-bar')
 
 //action when clicking menu hamburger
 menu.addEventListener('click', ()=> {
     ul.classList.toggle('show-flex')
-
+    bars[0].classList.toggle('menu-bar-1-change')
+    bars[1].classList.toggle('menu-bar-2-change')
+    bars[2].classList.toggle('menu-bar-3-change')
 })
