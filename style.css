@@ -9,7 +9,6 @@
 html, body {
     background-color: var(--grey);
     scroll-behavior: smooth;
-    /* font-family: 'Oswald', sans-serif; */
 }
 
 :root {
@@ -21,21 +20,25 @@ html, body {
     --root-width: 800px;
 }
 
+/* Logo company */
+
 #logo {
     text-align: center;
     margin: 10px 0;
 }
 
-/* #logo img {
+/*#logo img {
     width: 90%;
     max-width: 380px;
     margin: auto;
-} */
+}*/
 
 img.logo {
     height: 135px;
     border-radius: 5px;
 }
+
+/* Nav bar */
 
 nav {
     position: relative;
@@ -49,6 +52,24 @@ nav {
     font-size: 18px;
     height: 40px;
     max-height: auto;
+}
+
+#menu {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-bar {
+    background-color: var(--black);
+    height: 5px;
+    width: 30px;
+    border-radius: 5px;
+    margin: 2px 0px;
 }
 
 ul {
@@ -69,7 +90,6 @@ ul a {
 }
 
 ul > li {
-    /* width: 175px; */
     height: 40px;
     display: grid;
     place-items: center;
@@ -80,6 +100,8 @@ ul a:hover {
     transition-duration: 250ms;
     cursor: pointer;
 }
+
+/* Container */
 
 .container {
     width: 90%;
@@ -103,14 +125,15 @@ ul a:hover {
     text-align: center;
 }
 
+/* About company */
+
 #content-text {
     padding: 0 20px;
     text-align: center;
 }
-#content-services {
-    text-align: center;
-    font-size: large;
-}
+
+/* Slider photo */
+
 .slider {
     width: 90%;
     margin: 20px auto;
@@ -131,12 +154,56 @@ ul a:hover {
     cursor: pointer;
 }
 
+/* Services */
+
+#content-services {
+    text-align: center;
+    font-size: large;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Price */
+
+table {
+    text-align: center;
+    margin: auto;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 0 5px 5px 0;
+    text-align: justify;
+}
+
+td.tabel-price {
+    text-align: center;
+}
+
+/* Contact */
+
 #content-contact {
     margin: 20px auto;
     text-justify: auto;
 }
+
+h1.contact {
+    padding-bottom: 10px;
+}
+
+p.name {
+    font-size: 20px;
+}
+
+/* Email message */
+
 #contact-form {
-    /* height: 100px; */
     width: 90%;
     max-width: var(--root-width);
     background-color: var(--white);
@@ -194,24 +261,20 @@ ul a:hover {
 .show-flex {
     display: flex !important;
 }
-#menu {
-    position: absolute;
-    right: 10px;
-    top: 15px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-}
-.menu-bar {
-    background-color: var(--black);
-    height: 5px;
-    width: 30px;
-    border-radius: 5px;
-    margin: 2px 0px;
 
+/* Footer */
+
+footer {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--blue);
+    text-align: center;
+    height: 25px;
+    margin: auto;
+    padding: 25px 0;
 }
+
+/* Responsibility */
 
 @media (max-width: 750px) {
     ul {
@@ -228,45 +291,4 @@ ul a:hover {
     #menu {
         display: flex;
     }
-}
-
-ol {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer {
-    width: 100%;
-    color: var(--white);
-    background-color: var(--blue);
-    text-align: center;
-    height: 25px;
-    margin: auto;
-    padding: 25px 0;
-}
-
-table {
-    text-align: center;
-    margin: auto;
-}
-
-th {
-    padding: 10px;
-}
-
-td {
-    padding: 0 5px 5px 0;
-    text-align: justify;
-}
-
-td.tabel-price {
-    text-align: center;
-}
-
-h1.contact {
-    padding-bottom: 10px;
-}
-
-p.name {
-    font-size: 20px;
 }
