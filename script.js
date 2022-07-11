@@ -1,4 +1,8 @@
-//images arr
+//###########
+// slider
+//###########
+
+//images array
 const images = [
     'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
     'https://thumbs.dreamstime.com/b/spring-nature-sunny-morning-landscape-amazing-sky-grassy-meadow-sunlight-rural-scene-bright-sun-149207903.jpg',
@@ -38,3 +42,17 @@ const setImage = ( index, slider, arr ) => {
 
 //default image set when loading HTML
 setImage(currentIndex, slider, images)
+
+//###########
+// menu
+//###########
+
+//elements from HTML
+const menu = document.querySelector("#menu")
+const ul = document.querySelector("nav").querySelector("ul")
+
+//action when clicking menu hamburger
+menu.addEventListener('click', ()=> {
+    ul.classList.toggle('show-flex')
+
+})
