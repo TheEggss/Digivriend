@@ -33,12 +33,6 @@ html, body {
     margin-top: 110px;
 }
 
-/*#logo img {
-    width: 90%;
-    max-width: 380px;
-    margin: auto;
-}*/
-
 img.logo {
     height: 135px;
     border-radius: 5px;
@@ -185,6 +179,11 @@ ol {
     padding: 0;
 }
 
+img.ad {
+    width: 80%;
+    margin: 20px auto;
+}
+
 /* Price */
 
 table {
@@ -218,6 +217,12 @@ h1.contact {
 
 p.name {
     font-size: 20px;
+}
+
+/* Work Hours */
+
+td.tabel-hours {
+    padding-left: 30px;
 }
 
 /* Email message */
